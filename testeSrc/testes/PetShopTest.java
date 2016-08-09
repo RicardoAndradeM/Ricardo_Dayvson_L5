@@ -9,13 +9,13 @@ import org.junit.Test;
 
 public class PetShopTest {
 
-	/*private Hotel hotel;
+	private Hotel hotel;
 	
 	@Before
 	public void setUp(){
 		this.hotel = new Hotel();
 	}
-	*/
+	
 	@Test
 	public void testAnimal(){
 		try{
@@ -65,7 +65,7 @@ public class PetShopTest {
 		}
 	}
 	
-	/*@Test
+	@Test
 	public void testeRecepcao(){
 		try{
 			Recepcao recepcao = new Recepcao();
@@ -92,9 +92,9 @@ public class PetShopTest {
 		}catch(Exception e){
 			fail(); //Nao deve lancar excecao
 		}
-	}*/
+	}
 	
-/*	@Test
+	@Test
 	public void testeHotel(){
 		try{
 			hotel.checkIn("Frederico Mercury", "Cachorro", 12, 70, 900.0);
@@ -114,5 +114,5 @@ public class PetShopTest {
 		}catch(Exception e){
 			fail(); //Nao deve lancar excecao
 		}
-	}*/
+	}
 }
