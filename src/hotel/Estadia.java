@@ -5,13 +5,12 @@ public class Estadia {
 	double valorQuarto;
 	int qtdDias;
 
-	public Estadia(String nome, String tipo, int idade, int qtdDias, double valorQuarto) throws Exception{
-		animal = new Animal( nome,  tipo,  idade);
+	public Estadia(String nome, String tipo, int idade, int qtdDias, double valorQuarto) throws Exception {
+		animal = new Animal(nome, tipo, idade);
 		this.valorQuarto = valorQuarto;
 		this.qtdDias = qtdDias;
 	}
 
-	
 	public String getNome() {
 		return animal.getNome();
 	}
@@ -33,11 +32,12 @@ public class Estadia {
 		return qtdDias;
 	}
 
-
 	@Override
 	public String toString() {
-		return getNome() + ", " + getTipo() + ", " + getQtdDias() + 
-				" dias com o preço de R$ " + String.format("%.2f", getValorQuarto());
+		return getNome() + ", " + getTipo() + ", " + getQtdDias() + " dia(s) com o preço de R$ "
+				+ String.format("%.2f", getValorQuarto());
 
 	}
-}	
+
+	
+}
