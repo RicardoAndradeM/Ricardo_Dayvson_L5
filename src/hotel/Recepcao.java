@@ -10,13 +10,13 @@ public class Recepcao {
 		this.estadias = new ArrayList<Estadia>();
 	}
 	
-	public void checkin(String nome, String tipo, int idade, int dias, double valor) throws Exception {
+	public void checkIn(String nome, String tipo, int idade, int dias, double valor) throws Exception {
 		Estadia estadia = new Estadia(nome, tipo, idade, dias, valor);
 		estadias.add(estadia);
 
 	}
 	
-	public void checkout(String nome){
+	public void checkOut(String nome){
 		for (Estadia estadia : estadias) {
 			if(estadia.getNome().equals(nome)){
 				estadias.remove(estadia);
@@ -30,7 +30,7 @@ public class Recepcao {
 	}
 	
 	public double getLucroTotal() {
-		double lucro = 0;
+		double lucro = 0.0;
 		for (Estadia estadia : estadias) {
 			lucro += estadia.getValorQuarto();
 		}
@@ -41,7 +41,7 @@ public class Recepcao {
 	public String toString() {
 		String saida = "Estadias:";
 		for (Estadia estadia : estadias) {
-			saida+= String.format("\n %s", estadia.toString());
+			saida+= String.format("\n%s", estadia.toString());
 		}
 		return saida;
 	}
