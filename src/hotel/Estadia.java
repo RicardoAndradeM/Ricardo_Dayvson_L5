@@ -2,13 +2,13 @@ package hotel;
 
 public class Estadia {
 	Animal animal;
-	double valorQuarto;
-	int qtdDias;
+	double valor;
+	int dias;
 
-	public Estadia(String nome, String tipo, int idade, int qtdDias, double valorQuarto) throws Exception {
+	public Estadia(String nome, String tipo, int idade, int dias, double valor) throws Exception {
 		animal = new Animal(nome, tipo, idade);
-		this.valorQuarto = valorQuarto;
-		this.qtdDias = qtdDias;
+		this.valor = valor;
+		this.dias = dias;
 	}
 
 	public String getNome() {
@@ -25,11 +25,11 @@ public class Estadia {
 	}
 
 	public double getValorQuarto() {
-		return valorQuarto;
+		return valor;
 	}
 
 	public int getQtdDias() {
-		return qtdDias;
+		return dias;
 	}
 
 	@Override
