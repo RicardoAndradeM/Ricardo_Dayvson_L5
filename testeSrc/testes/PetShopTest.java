@@ -1,9 +1,7 @@
-/*
- * Gabriel Silva Vinha - Monitoria de LP2 - 2016.1
- */
+
 
 package testes;
-
+import hotel.*;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -26,7 +24,7 @@ public class PetShopTest {
 			Animal toto = new Animal("Toto", "Cachorro", 3);
 			
 			assertEquals(paola.getTipo(), "Cobra");
-			assertEquals(freddie.getNome(), "Freddie");
+			assertNotEquals(frederico.getNome(), "Freddie");
 			assertNotEquals(toto.getIdade(), 5000);
 			
 			Animal gabriel = new Animal("Gabriel", "Gato", 18);
