@@ -1,5 +1,7 @@
 package hotel;
 
+import java.util.Locale;
+
 public class Estadia {
 	Animal animal;
 	double valor;
@@ -34,8 +36,8 @@ public class Estadia {
 
 	@Override
 	public String toString() {
-		return getNome() + ", " + getTipo() + ", " + getQtdDias() + " dia(s) com o preço de R$ "
-				+ String.format("%.2f", getValorQuarto());
+		return getNome() + " (" + getTipo() + "): " + getQtdDias() + " dias com o preco de R$ "
+				+ String.format(Locale.US,"%.2f", getValorQuarto());
 
 	}
 
